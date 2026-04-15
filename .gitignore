@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+
+# Node / Next
+node_modules/
+.next/
+out/
+.turbo/
+
+# Vercel
+.vercel
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs (keep folder; ignore generated artifacts)
+output/*.csv
+output/*.xlsx
+output/*.json
+output/_uploaded_submissions.csv

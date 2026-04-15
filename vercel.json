@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/evaluate.py": { "maxDuration": 60 },
+    "api/export.py": { "maxDuration": 30 }
+  }
+}

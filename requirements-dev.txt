@@ -1,0 +1,6 @@
+# Optional local tools (Streamlit UI, FastAPI, tests) — not required for Vercel.
+-r requirements.txt
+streamlit>=1.33.0
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pytest>=8.0.0
