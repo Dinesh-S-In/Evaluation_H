@@ -6,9 +6,12 @@ import type { ApiError, EvaluateResponse, RankedRow } from "@/lib/types";
 function uint8ToBase64(bytes: Uint8Array): string {
   let binary = "";
   const chunk = 0x8000;
+
   for (let i = 0; i < bytes.length; i += chunk) {
-    binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+    const subArray = bytes.subarray(i, i + chunk);
+    binary += String.fromCharCode.apply(null, Array.from(subArray));
   }
+
   return btoa(binary);
 }
 
